@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <script>
-    // 今日の日付を "YYYY-MM-DD" 形式で取得して、そのままリダイレクト
+    // 今日の日付を "YYYY-MM-DD" 形式で取得して、nfc パラメータ付き URL に即リダイレクト
     const d = new Date().toISOString().slice(0, 10);
-    location.replace(`https://nanpeigoryon.carrd.co/?date=${d}`);
+    location.replace(`https://nanpeigoryon.carrd.co/?nfc=${d}`);
   </script>
 </head>
 <body></body>
