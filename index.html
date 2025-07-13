@@ -1,13 +1,17 @@
-<!-- 保存ファイル名: index.html -->
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-store">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <script>
-    // 今日の日付を "YYYY-MM-DD" 形式で取得して、nfc パラメータ付き URL に即リダイレクト
-    const d = new Date().toISOString().slice(0, 10);
-    location.replace(`https://nanpeigoryon.carrd.co/?nfc=${d}`);
+    (function() {
+      const d = new Date().toISOString().slice(0, 10);
+      location.replace(`https://nanpeigoryon.carrd.co/?nfc=${d}`);
+    })();
   </script>
 </head>
-<body></body>
+<body style="margin:0;background:#fff;"></body>
 </html>
